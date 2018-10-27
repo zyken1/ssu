@@ -12,7 +12,7 @@ function Conectar()
 {
 		// $conexion = mysqli_connect("localhost", "u819229246_ssu2", "1MNWPNjvoKIX", "u819229246_ssu2");
 		// $conexion = mysqli_connect("localhost", "u819229246_ssu", "Df1aQvhroQNz", "u819229246_ssu");
-	$conexion = mysqli_connect("localhost", "root", "1212mysql", "ssu");
+	$conexion = mysqli_connect("localhost", "root", "1212mysql", "ssu2");
 
 	if (!$conexion) {
 	    echo "Error: No se pudo conectar a MySQL." . PHP_EOL;
