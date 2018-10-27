@@ -20,6 +20,7 @@ if(trim($_POST["Login"]) != "" && trim($_POST["Password"]) != "")
 					  	$_SESSION["Usuario"] = $fila["login"];
 						$_SESSION["Nombre"] = $fila["nombre"];
 						$_SESSION["Correo"] = $fila["correo"];
+						$_SESSION["Correo2"] = $fila["correo_empresa"];
 						$_SESSION["Pagina"] = $fila["pagina"];
 						$_SESSION["Menu"] = $fila["menu"];
 						$_SESSION["Funciones"] = $fila["funcion"];

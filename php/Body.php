@@ -5,8 +5,9 @@
       <header id="header">
           <!-- <img src="../imagenes/sips.png" id="logo" class="logo">           -->
             <!-- <img src="../imagenes/salle.png" alt="SIPS_imagen" class="SIPS_imagen"> -->
+         
          <img src="../imagenes/logo.png" class="logo" class="img-fluid" alt="logo_vectores" class="logo_vectores" style="height: 145px;">
-
+         <p class="text-right" id="nombre">Texto alineado a la derecha.</p>
       </header>
 
 <nav class="navbar navbar-expand-lg navbar-light" id="nav_SIPS">
