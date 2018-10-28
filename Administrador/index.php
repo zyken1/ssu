@@ -8,9 +8,20 @@
 
 <?php include ("../php/Body.php"); ?>
 
-<p align="center" class="shadow-lg p-3 mb-5 bg-white rounded">Bienvenido(a): <?php echo $_SESSION["Nombre"]; ?></p>
-
-<p align="center" class="alert alert-info">Tu correo es: <?php echo $_SESSION["Correo"]; ?></p>
-
+<table class="table">
+  <!-- <caption>List of users</caption> -->
+  <thead class="alert-info shadow text-center">
+    <tr>
+      <th scope="col" colspan="2">Bienvenido(a): <?php echo $_SESSION["Nombre"]; ?></th>
+      <!-- <th scope="col">First</th> -->
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Tu correo personal es:</th>
+      <td> <?php echo $_SESSION["Correo"]; ?></td>
+    </tr>
+  </tbody>
+</table>
 
 <?php include ("../php/Footer.php"); ?>

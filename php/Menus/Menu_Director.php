@@ -35,14 +35,13 @@
     </li>
 
     <li class="nav-item dropdown">
-        <a class="nav-link " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Impresiones</a>
-
-        <div class="dropdown-content" aria-labelledby="navbarDropdownMenuLink">
-            <!-- <a class="dropdown-item" href="#">Action</a> -->
-            <!-- <a class="dropdown-item" href="#">Action</a> -->
-            <a class="dropdown-item" href="../impresiones/ayleen" target="_blank">Ayleen PDF</a>
-        </div>
+       <a class="nav-link btn-outline-light" href="" id="navbarDropdownMenuLink" aria-haspopup="false" aria-expanded="true">E-mail</a>        
+       <div class="dropdown-content" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="https://webmail1.hostinger.mx/" target="_blank">Hostinger E-mail</a>
+          <a class="dropdown-item" href="Correos.php">Correos</a>
+       </div>
     </li>
+    
 </ul>
 
 

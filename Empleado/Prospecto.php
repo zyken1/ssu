@@ -37,7 +37,7 @@
 <?php include ("../php/Body.php"); ?>
 
 <form name="Formulario_Area">
-	<div class="input-group mb-3">
+	<div class="input-group container p-2 mb-3">
 	  <div class="input-group-prepend">
 	    <label class="input-group-text" for="Combo_Area">Selecciona Una Area</label>
 	  </div>

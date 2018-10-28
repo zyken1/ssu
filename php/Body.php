@@ -7,7 +7,7 @@
             <!-- <img src="../imagenes/salle.png" alt="SIPS_imagen" class="SIPS_imagen"> -->
          
          <img src="../imagenes/logo.png" class="logo" class="img-fluid" alt="logo_vectores" class="logo_vectores" style="height: 145px;">
-         <p class="text-right" id="nombre">Texto alineado a la derecha.</p>
+         <p class="text-right" id="nombre"><?php echo $_SESSION["Nombre"]; ?></p>
       </header>
 
 <nav class="navbar navbar-expand-lg navbar-light" id="nav_SIPS">
@@ -23,4 +23,4 @@
 
 
 <!-- p-5  Se refiere al padding del contenido -->
-<div class="container p-5">
+<div class="container-fluid p-5">

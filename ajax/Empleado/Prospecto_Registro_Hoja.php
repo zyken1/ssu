@@ -1,19 +1,12 @@
-<?php
-session_start();
-// include ("../php/Funciones.php");
-// $sql_escuela = "SELECT escuela FROM escuela WHERE id_escuela = '".$_POST["id_Escuela"]."';";
-// $resultado_escuela = mysqli_query($conexion,$sql_escuela);
-// $fila_escuela = mysqli_fetch_array($resultado_escuela);
+<?php session_start(); ?>
 
-?>
-<!-- <form name="Form_Prospecto" role="form" id="Form_Prospecto" class="contact-form" data-toggle="validator" class="shake"> -->
 <form name="Form_Prospecto" id="Form_Prospecto" class="contact-form">
   <section id="content">
     <div class="container">
       <div class="row">
         <div class="col-md-9">
-          <h2>Registro Prospecto</h2>   
-        <!-- Start Contact Form -->
+          <div><h2>Registro Prospecto</h2></div>
+          <div>&nbsp;</div>
         <!-- <form role="form" id="Form_Prospecto" class="contact-form" data-toggle="validator" class="shake"> -->
 <!--           <div class="form-group col-md-3">
             <div class="controls">
@@ -22,7 +15,7 @@ session_start();
             </div>
           </div> -->
           <div class="row">
-              <div class="col-md-6 mb-3">
+              <div class="col-md-6 mt-3">
                 <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" value="" required data-error="Please enter your name">
               </div>
               <div class="col-md-6 mb-3">
@@ -122,17 +115,17 @@ switch ($area) {
     case 1:
         echo "<a href='../catalogo/CALENTADORES-ACTUALIZADA-FEBRERO-2018.pdf' target='_blank'>";
         echo "<img src='../imagenes/calentador_solar.jpg' alt='Calentador Solar' style='width:184px;height:183px;'>"."</a>";
-        echo "<p style='color: brown;'> CLICK EN LA IMAGEN </p>";
+        echo "<p style='color: brown;'> CLICK  PARA CATALOGO EN LA IMAGEN </p>";
         break;
     case 2:
         echo "<a href='#' target='_blank'>";
         echo "<img src='../imagenes/calentador_solar.jpg' alt='Calentador Solar' style='width:184px;height:183px;'>"."</a>";
-        echo "<p style='color: brown;'> CLICK EN LA IMAGEN </p>";
+        echo "<p style='color: brown;'> CLICK PARA CATALOGO EN LA IMAGEN </p>";
         break;
     case 3:
         echo "<a href='#' target='_blank'>";
         echo "<img src='../imagenes/calentador_solar.jpg' alt='Calentador Solar' style='width:184px;height:183px;'>"."</a>";
-        echo "<p style='color: brown;'> CLICK EN LA IMAGEN </p>";
+        echo "<p style='color: brown;'> CLICK PARA CATALOGO EN LA IMAGEN </p>";
         break;
 }
 ?>
