@@ -6,33 +6,31 @@
         <a class="nav-link " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Administrador</a>
         
         <div class="dropdown-content" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="nada.php">Something else here</a>
+            <a class="dropdown-item" href="Catalogos.php">Catalogos</a>
+            <!-- <a class="dropdown-item" href="#">Another action</a> -->
+            <!-- <a class="dropdown-item" href="nada.php">Something else here</a> -->
         </div>
     </li>
 
-    <!-- <img src="../imagenes/salle.ico" alt="Logo" style="width:28px;"> -->
-    <li class="nav-item dropdown">
-        <a class="nav-link " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Horario</a>
+<!--     <li class="nav-item dropdown">
+        <a class="nav-link " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Modificaciónes</a>
         
         <div class="dropdown-content" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="#">Action</a>
             <a class="dropdown-item" href="#">Another action</a>
             <a class="dropdown-item" href="nada.php">Something else here</a>
         </div>
-    </li>
+    </li> -->
 
-    <li class="nav-item dropdown">
-        <!-- <a class="nav-link" href="#">Pricing</a> -->
-         <a class="nav-link " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Calificacion</a>
+<!--     <li class="nav-item dropdown">
+         <a class="nav-link " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resultados</a>
         
         <div class="dropdown-content" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="#">Action</a>
             <a class="dropdown-item" href="#">Another action</a>
             <a class="dropdown-item" href="nada.php">Something else here</a>
         </div>
-    </li>
+    </li> -->
 
     <li class="nav-item dropdown">
        <a class="nav-link btn-outline-light" href="" id="navbarDropdownMenuLink" aria-haspopup="false" aria-expanded="true">E-mail</a>        
