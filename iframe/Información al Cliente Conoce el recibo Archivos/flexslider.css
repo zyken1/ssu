@@ -1,0 +1,283 @@
+﻿/*
+ * jQuery FlexSlider v2.5.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 and later license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ * 
+ */
+/* ====================================================================================================================
+ * FONT-FACE
+ * ====================================================================================================================*/
+@font-face {
+  font-family: 'flexslider-icon';
+  src: url('fonts/flexslider-icon.eot');
+  src: url('fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('fonts/flexslider-icon.woff') format('woff'), url('fonts/flexslider-icon.ttf') format('truetype'), url('fonts/flexslider-icon.svg#flexslider-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* ====================================================================================================================
+ * RESETS
+ * ====================================================================================================================*/
+.flex-container a:hover,
+.flex-slider a:hover,
+.flex-container a:focus,
+.flex-slider a:focus {
+  outline: none;
+}
+.slides,
+.slides > li,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ====================================================================================================================
+ * BASE STYLES
+ * ====================================================================================================================*/
+.flexslider {
+  margin: 0;
+  padding: 0;
+}
+.flexslider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden;
+}
+.flexslider .slides img {
+  max-width: 100%;
+  display: block;
+  overflow:hidden;
+  margin:auto;
+}
+
+/*@media(min-width:1250px) {
+	.flexslider .slides img {
+	  height:445px;
+	}	
+}*/
+
+.flexslider .slides:after {
+  content: "\0020";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+html[xmlns] .flexslider .slides {
+  display: block;
+}
+
+* html .flexslider .slides {
+  height: 1%;
+}
+
+.no-js .flexslider .slides > li:first-child {
+  display: block;
+}
+/* ====================================================================================================================
+ * DEFAULT THEME
+ * ====================================================================================================================*/
+
+ .block-image-linkfe {
+	background-position: center; transition:0.3s; display: block; position: relative; min-height: 425px; background-repeat: no-repeat; background-size: cover; background-color: rgb(221, 221, 221); -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; -moz-transition: all 0.3s ease;
+}
+.block-image-linkfe .caption {
+	background: linear-gradient(rgba(0, 0, 0, .3) 0%, rgba(0, 0, 0, 0.9) 100%); padding: 1rem; left: 0px; width: 100%; bottom: 0px; color: rgb(255, 255, 255); position: absolute; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+}
+.block-image-linkfe .caption .title {
+	margin-bottom: 1rem;
+}
+.block-image-linkfe .caption p {
+	line-height: 1.4; font-size: 14px; font-weight: lighter;
+}
+@media all and (min-width:40em)
+{
+.block-image-linkfe .caption p {
+	font-size: 16px;
+}
+}
+ 
+ 
+.flexslider {
+  margin: 0;
+  background: #CCC;
+  position: relative;
+  zoom: 1;
+}
+
+.flexslider .slides {
+  zoom: 1;  
+}
+
+.flexslider .slides img {
+  min-height: 300px;
+  overflow:hidden;
+}
+
+
+.flex-caption {
+	width: 96%;
+	padding: 2%;
+	left: 0;
+	bottom: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+	font-size:1.8em;
+	color:#FFF;
+	background: -moz-linear-gradient(top, transparent 0%, rgba(0,0,0,0.9) 100%);
+    background: -webkit-linear-gradient(top, transparent 0%, rgba(0,0,0,0.9) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.9) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#e6000000',GradientType=0 );
+}
+
+@media(max-width:700px) {
+	.flex-caption {
+		font-size:1em;
+	}	
+}
+
+@media(max-width:450px) {
+	.flex-caption {
+		font-size:0.8em;
+	}	
+}
+
+
+.flex-direction-nav a {
+  text-decoration: none;
+  display: block;
+  width: 30px;
+  height: 30px;
+  /*margin: -20px 0 0;*/
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  overflow: hidden;
+  opacity: 0;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.flex-direction-nav a:before {
+  font-family: "flexslider-icon";
+  font-size: 30px;
+  display: inline-block;
+  content: '\f001';
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+}
+.flex-direction-nav a.flex-next:before {
+  content: '\f002';
+}
+.flex-direction-nav .flex-prev {
+  left: -50px;
+}
+.flex-direction-nav .flex-next {
+  right: -50px;
+  text-align: right;
+}
+.flexslider:hover .flex-direction-nav .flex-prev {
+  opacity: 0.7;
+  left: 10px;
+}
+.flexslider:hover .flex-direction-nav .flex-prev:hover {
+  opacity: 1;
+}
+.flexslider:hover .flex-direction-nav .flex-next {
+  opacity: 0.7;
+  right: 10px;
+}
+.flexslider:hover .flex-direction-nav .flex-next:hover {
+  opacity: 1;
+}
+
+
+
+.flex-control-nav {
+  width: 100%;
+  position: absolute;
+  bottom: -35px;
+  text-align: center;
+}
+.flex-control-nav li {
+  margin: 0 6px;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+.flex-control-paging li a {
+  width: 8px;
+  height: 8px;
+  display: block;
+  background: #FFF;
+  background: rgba(153, 153, 153, 0.5);
+  cursor: pointer;
+  text-indent: -9999px; 
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.flex-control-paging li a:hover {
+  background: #999;
+  background: rgba(153, 153, 153, 0.7);
+}
+.flex-control-paging li a.flex-active {
+  background: #999;
+  background: rgba(153, 153, 153, 0.9);
+  cursor: default;
+}
+.flex-control-thumbs {
+  margin: 5px 0 0;
+  position: static;
+  overflow: hidden;
+}
+.flex-control-thumbs li {
+  width: 25%;
+  float: left;
+  margin: 0;
+}
+.flex-control-thumbs img {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: .7;
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.flex-control-thumbs img:hover {
+  opacity: 1;
+}
+.flex-control-thumbs .flex-active {
+  opacity: 1;
+  cursor: default;
+}
+/* ====================================================================================================================
+ * RESPONSIVE
+ * ====================================================================================================================*/
+@media screen and (max-width: 860px) {
+  .flex-direction-nav .flex-prev {
+    opacity: 1;
+    left: 10px;
+  }
+  .flex-direction-nav .flex-next {
+    opacity: 1;
+    right: 10px;
+  }
+}

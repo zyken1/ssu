@@ -24,13 +24,10 @@
     </li>
 
     <li class="nav-item dropdown">
-        <!-- <a class="nav-link" href="#">Pricing</a> -->
-         <a class="nav-link " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Calificacion</a>
-        
+       <a class="nav-link btn-outline-light" id="navbarDropdownMenuLink" aria-haspopup="false" aria-expanded="true">CFE</a>        
         <div class="dropdown-content" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="nada.php">Something else here</a>
+            <a class="dropdown-item" href="Datos_Recibo.php">Conoce el Recibo</a>
+            <a class="dropdown-item" href="Pagina_Cfe.php">Consulta de Recibo</a>
         </div>
     </li>
 

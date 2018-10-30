@@ -14,10 +14,10 @@
 
     <!--  En caso de haber solo un link quitar el    data-toggle="dropdown"  para que se dirija a al link -->
     <li class="nav-item dropdown">
-    <a class="nav-link btn-outline-light" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Calentadores</a>
+    <a class="nav-link btn-outline-light" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cotizador</a>
         
         <div class="dropdown-content" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="index.php">Cotizar</a>
+            <a class="dropdown-item" href="index.php">Calentadores</a>
             <!-- <a class="dropdown-item" href="index.php">Modificación</a> -->
             <!-- <a class="dropdown-item" href="Cotizador_Calentadores.php">Cotizador</a> -->
         </div>
@@ -29,14 +29,15 @@
             <a class="dropdown-item" href="Anuncios_Cobranza.php">Anuncios</a>
         </div>
     </li>
-
+ -->
     <li class="nav-item dropdown">
-    <a class="nav-link btn-outline-light" href="index.php" id="navbarDropdownMenuLink" aria-haspopup="false" aria-expanded="true">Autónomo</a>        
+       <a class="nav-link btn-outline-light" id="navbarDropdownMenuLink" aria-haspopup="false" aria-expanded="true">CFE</a>        
         <div class="dropdown-content" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="Anuncios_Cobranza.php">Anuncios</a>
+            <a class="dropdown-item" href="Datos_Recibo.php">Conoce el Recibo</a>
+            <a class="dropdown-item" href="Pagina_Cfe.php">Consulta de Recibo</a>
         </div>
     </li>
- -->
+
     <li class="nav-item dropdown">
        <a class="nav-link btn-outline-light" href="https://webmail1.hostinger.mx/" target="_blank" id="navbarDropdownMenuLink" aria-haspopup="false" aria-expanded="true">Correo</a>        
        <div class="dropdown-content" aria-labelledby="navbarDropdownMenuLink">
