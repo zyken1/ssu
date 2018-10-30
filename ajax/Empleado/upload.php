@@ -2,8 +2,7 @@
 include("../../php/Funciones.php");
 // setlocale (LC_ALL, "spanish-mexican");
 
-$replace = array('""','´','?','¿');
-// echo str_replace($search, $replace, $subject);
+$cadena = array("“" ,"”" ,'""' ,'´' ,'?' ,'¿');
 
 if($_SERVER['REQUEST_METHOD'] == "POST" && isset($_FILES["fileToUpload"]["type"])){
 $target_dir = "../../imagenes/prospectos/";
@@ -13,8 +12,10 @@ if (!file_exists($carpeta)) {
 }
 
 //$uploadfile = $uploaddir . ":" . $_POST["id_Aspirante"] . ":" . basename($_FILES["userfile"]["name"]);	//Se concatena el id_Aspirante al nombre del archivo
+
 $target_file = $carpeta . basename($_FILES["fileToUpload"]["name"]);
-// $nombre_archivo = basename($_FILES["fileToUpload"]["name"]);
+$nombre_archivo = recursive_array_replace($cadena ,"", $target_file);
+
 $uploadOk = 1;
 $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 
@@ -62,11 +63,11 @@ if ($uploadOk == 0) {
     $errors[]= "Lo sentimos, tu archivo no fue subido.";
 // if everything is ok, try to upload file
 } else {
-    if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"],$target_file)) {
+    if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"],$nombre_archivo)) {
        // $messages[]= "El Archivo ha sido subido correctamente.";
        $messages[]= "El Archivo es válido.";
        session_start();
-       $_SESSION["ruta_imagen"] = $target_file;
+       $_SESSION["ruta_imagen"] = $nombre_archivo;
     } else {
        $errors[]= "Lo sentimos, hubo un error subiendo el archivo.";
     }

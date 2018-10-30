@@ -1483,20 +1483,17 @@ function Bitacora_SSU($tabla, $id_usuario, $ip, $archivo, $consulta, $error)
 }
 
 
-// function recursive_array_replace($find, $replace, $array) {
+function recursive_array_replace($find, $replace, $array) {
+    if (!is_array($array)) {
+        return str_replace($find, $replace, $array);
+    }
+    $newArray = array();
+    foreach ($array as $key => $value) {
+        $newArray[$key] = recursive_array_replace($find, $replace, $value);
+    }
+    return $newArray;
+}
 
-//     if (!is_array($array)) {
-//         return str_replace($find, $replace, $array);
-//     }
-
-//     $newArray = array();
-
-//     foreach ($array as $key => $value) {
-//         $newArray[$key] = recursive_array_replace($find, $replace, $value);
-//     }
-
-//     return $newArray;
-// }
 
 
 

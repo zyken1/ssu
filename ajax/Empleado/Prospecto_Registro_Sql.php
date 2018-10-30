@@ -6,7 +6,7 @@ include ("../../php/Funciones.php");
 
 // $_POST["nombre"] = "nombre";
 $id_area = $_SESSION["id_area"];
-utf8_encode($ruta_imagen) = $_SESSION["ruta_imagen"];
+$ruta_imagen = $_SESSION["ruta_imagen"];
 
 $consulta_id="SELECT MAX(id_prospecto) + 1 AS ultimo_id FROM prospectos ";
 $resultado = mysqli_query($conexion,$consulta_id);
