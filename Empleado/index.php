@@ -24,7 +24,7 @@
     </tr>
     <tr>
       <th scope="row">Correo de Cotizaciones y General</th>
-      <td><?php echo $_SESSION["Correo2"]; ?><a href="https://www.google.com/gmail/"><img src="../imagenes/logo_gmail.ico" alt="Logo" style="width:28px;"></a>
+      <td><?php echo $_SESSION["Correo2"]; ?> &nbsp;&nbsp; &nbsp; <a href="https://www.google.com/gmail/"><img src="../imagenes/logo_gmail.ico" alt="Logo" style="width:28px;"></a>
       </td>
       <td></td>
     </tr>
