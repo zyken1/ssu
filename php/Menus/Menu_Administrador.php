@@ -24,14 +24,6 @@
     </li>
 
     <li class="nav-item dropdown">
-       <a class="nav-link btn-outline-light" id="navbarDropdownMenuLink" aria-haspopup="false" aria-expanded="true">CFE</a>        
-        <div class="dropdown-content" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="Datos_Recibo.php">Conoce el Recibo</a>
-            <a class="dropdown-item" href="Pagina_Cfe.php">Consulta de Recibo</a>
-        </div>
-    </li>
-
-    <li class="nav-item dropdown">
        <a class="nav-link btn-outline-light" href="" id="navbarDropdownMenuLink" aria-haspopup="false" aria-expanded="true">E-mail</a>        
        <div class="dropdown-content" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="https://webmail1.hostinger.mx/" target="_blank">Hostinger E-mail</a>
@@ -39,6 +31,16 @@
        </div>
     </li>
 
+    <li class="nav-item dropdown">
+       <a class="nav-link btn-outline-light" id="navbarDropdownMenuLink" aria-haspopup="false" aria-expanded="true">CFE</a>        
+        <div class="dropdown-content" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="Datos_Recibo.php">Conoce el Recibo</a>
+            <a class="dropdown-item" href="Esquema_Tarifario.php">Nuevo Esquema Tarifario</a>
+            <a class="dropdown-item" href="Descarga_Recibo.php">Descarga de Recibo</a>
+        </div>
+    </li>
+
+    
 </ul>
 
 

@@ -4,7 +4,7 @@ include ("../../php/Funciones.php");
 // include ("../../js/Empleado/Prospecto_Funciones.php");
 // $conexion = Conectar();
 
-$_POST["nombre"] = "nombre de prueba";
+// $_POST["nombre"] = "nombre de prueba";
 $id_area = $_SESSION["id_area"];
 $ruta_imagen = $_SESSION["ruta_imagen"];
 

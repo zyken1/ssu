@@ -29,19 +29,20 @@
         </div>
     </li>
  -->
-    <li class="nav-item dropdown">
-       <a class="nav-link btn-outline-light" id="navbarDropdownMenuLink" aria-haspopup="false" aria-expanded="true">CFE</a>        
-        <div class="dropdown-content" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="Datos_Recibo.php">Conoce el Recibo</a>
-            <a class="dropdown-item" href="https://app.cfe.mx/Aplicaciones/CCFE/Recibos/Consulta/login.aspx?ReturnUrl=%2FAplicaciones%2FCCFE%2FRecibos%2FConsulta" target="_blank">Descarga de Recibo</a>
-        </div>
-    </li>
 
     <li class="nav-item dropdown">
        <a class="nav-link btn-outline-light" href="https://webmail1.hostinger.mx/" target="_blank" id="navbarDropdownMenuLink" aria-haspopup="false" aria-expanded="true">Correo</a>        
        <div class="dropdown-content" aria-labelledby="navbarDropdownMenuLink">
           <!-- <a class="dropdown-item" href="Anuncios_Cobranza.php">Anuncios</a> -->
        </div>
+    </li>
+    
+    <li class="nav-item dropdown">
+       <a class="nav-link btn-outline-light" id="navbarDropdownMenuLink" aria-haspopup="false" aria-expanded="true">CFE</a>        
+        <div class="dropdown-content" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="Datos_Recibo.php">Conoce el Recibo</a>
+            <a class="dropdown-item" href="Descarga_Recibo.php">Descarga de Recibo</a>
+        </div>
     </li>
 <!-- 
     <li class="nav-item dropdown">

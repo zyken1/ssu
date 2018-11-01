@@ -9,7 +9,7 @@
 <?php include ("../php/Body.php"); ?>
 
 <div style="width:100%;height:800px;overflow:hidden;">
-<iframe src="../iframe/Conoce el recibo.htm" width="100%" height="1000px"></iframe>
+<iframe src="../iframe/TarifaDAC.aspx.htm" width="100%" height="800px"></iframe>
 </div>
 
 
