@@ -15,7 +15,6 @@
     <!--  En caso de haber solo un link quitar el    data-toggle="dropdown"  para que se dirija a al link -->
     <li class="nav-item dropdown">
     <a class="nav-link btn-outline-light" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cotizador</a>
-        
         <div class="dropdown-content" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="index.php">Calentadores</a>
             <!-- <a class="dropdown-item" href="index.php">Modificación</a> -->
@@ -34,7 +33,7 @@
        <a class="nav-link btn-outline-light" id="navbarDropdownMenuLink" aria-haspopup="false" aria-expanded="true">CFE</a>        
         <div class="dropdown-content" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="Datos_Recibo.php">Conoce el Recibo</a>
-            <a class="dropdown-item" href="Pagina_Cfe.php">Consulta de Recibo</a>
+            <a class="dropdown-item" href="https://app.cfe.mx/Aplicaciones/CCFE/Recibos/Consulta/login.aspx?ReturnUrl=%2FAplicaciones%2FCCFE%2FRecibos%2FConsulta" target="_blank">Descarga de Recibo</a>
         </div>
     </li>
 
@@ -44,6 +43,13 @@
           <!-- <a class="dropdown-item" href="Anuncios_Cobranza.php">Anuncios</a> -->
        </div>
     </li>
+<!-- 
+    <li class="nav-item dropdown">
+       <a class="nav-link btn-outline-light" href="https://trello.com/b/3PX4bz7z" target="_blank" id="navbarDropdownMenuLink" aria-haspopup="false" aria-expanded="true">Notas </a>        
+       <div class="dropdown-content" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="Anuncios_Cobranza.php">Anuncios</a>
+       </div>
+    </li> -->
 
 </ul>
 

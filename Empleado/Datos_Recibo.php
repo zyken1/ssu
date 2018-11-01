@@ -18,11 +18,11 @@
   <tbody>
     <tr>
       <th scope="row">usuario</th>
-      <td>sistemassola</td>
+      <td>maryfdez</td>
     </tr>
     <tr>
       <th scope="row">contraseña</th>
-      <td>sistemassolares123</td>
+      <td>danytf2013</td>
     </tr>
   </tbody>
 </table>
