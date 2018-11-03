@@ -3,39 +3,31 @@
 
     <li class="nav-item dropdown">
         <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
-        <a class="nav-link " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Administrador</a>
+        <a class="nav-link " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Prospectos</a>
+        
+        <div class="dropdown-content" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="Prospectos_Proyectos.php">Proyectos</a>
+            <!-- <a class="dropdown-item" href="#">Prospectos</a> -->
+            <!-- <a class="dropdown-item" href="nada.php">Something else here</a> -->
+        </div>
+    </li>
+
+    <li class="nav-item dropdown">
+        <a class="nav-link " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catalogos</a>
         
         <div class="dropdown-content" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="Catalogos.php">Catalogos</a>
+            <!-- <a class="dropdown-item" href="Tarjetas.php">Tarjetas</a> -->
             <!-- <a class="dropdown-item" href="#">Another action</a> -->
             <!-- <a class="dropdown-item" href="nada.php">Something else here</a> -->
         </div>
     </li>
 
-<!--     <li class="nav-item dropdown">
-        <a class="nav-link " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Modificaciónes</a>
-        
-        <div class="dropdown-content" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="nada.php">Something else here</a>
-        </div>
-    </li> -->
-
-<!--     <li class="nav-item dropdown">
-         <a class="nav-link " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resultados</a>
-        
-        <div class="dropdown-content" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="nada.php">Something else here</a>
-        </div>
-    </li> -->
 
     <li class="nav-item dropdown">
        <a class="nav-link btn-outline-light" href="" id="navbarDropdownMenuLink" aria-haspopup="false" aria-expanded="true">E-mail</a>        
        <div class="dropdown-content" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="https://webmail1.hostinger.mx/" target="_blank">Hostinger E-mail</a>
+          <!-- <a class="dropdown-item" href="https://webmail1.hostinger.mx/" target="_blank">Hostinger E-mail</a> -->
           <a class="dropdown-item" href="Correos.php">Correos</a>
        </div>
     </li>
@@ -49,6 +41,16 @@
         </div>
     </li>
 
+    <li class="nav-item dropdown">
+         <a class="nav-link " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cotizadores</a>
+        
+        <div class="dropdown-content" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="../Cotizadores_Excel/1.-COTIZADOR CALENTADORES .xlsm">Cotizador Calentadores</a>
+            <a class="dropdown-item" href="../Cotizadores_Excel/COTIZADOR MASTER 9 JULIO.xlsm">COTIZADOR MASTER</a>
+            <a class="dropdown-item" href="../Cotizadores_Excel/COTIZADOR REDISEÑADO.xlsm">COTIZADOR REDISEÑADO</a>
+            <a class="dropdown-item" href="../Cotizadores_Excel/SUPER COTIZADOR BOMBEO.xlsm">SUPER COTIZADOR BOMBEO</a>
+        </div>
+    </li>
 
 </ul>
 

@@ -27,9 +27,9 @@
   </tbody>
 </table>
 
-<!-- <div style="width:100%;height:800px;overflow:hidden;">
+  <div style="width:100%;height:800px;overflow:hidden;">
 <iframe src="https://app.cfe.mx/Aplicaciones/CCFE/Recibos/Consulta/Registro.aspx?r=7efb6c9944dfe4b0be1a07ddab62b9f0" width="100%" height="800px"></iframe>
-</div> -->
+  </div>
 
 
 <?php include ("../php/Footer.php"); ?>

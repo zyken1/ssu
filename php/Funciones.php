@@ -1453,52 +1453,6 @@ function Becas_Disminucion($fecha_disminucion)
 }
 
 
-
-// function Bitacora_SIUP($tabla, $id_usuario, $ip, $archivo, $consulta, $error)
-// {
-// 	$conexion = Conectar();
-// 	mysqli_select_db($conexion,"bitacoras_sips");
-	
-// 	if(trim($error) != "")
-// 	{
-// 		$sql_bitacora = "INSERT INTO ".$tabla."_errores (id_usuario, fecha, hora, ip, archivo, consulta, error) VALUES (
-// '".$id_usuario."', '".date("Y-m-d")."', '".date("H:i:s")."', '".$ip."', '".$archivo."', '".mysqli_real_escape_string($conexion,$consulta)."','".mysqli_real_escape_string($conexion, $error)."');";
-// 	}
-// 	else
-// 	{
-// 		$sql_bitacora = "INSERT INTO ".$tabla." (id_usuario, fecha, hora, ip, archivo, consulta) VALUES (
-// '".$id_usuario."', '".date("Y-m-d")."', '".date("H:i:s")."', '".$ip."', '".$archivo."', '".mysqli_real_escape_string($conexion,$consulta)."');";
-// 	}
-		
-// 	mysqli_query($conexion, $sql_bitacora);
-// 	mysqli_select_db($conexion, "siup7");
-	
-// }
-
-
-function Bitacora_SSU($tabla, $id_usuario, $ip, $archivo, $consulta, $error)
-{
-	$conexion = Conectar();
-	// mysqli_select_db($conexion,"bitacora_ssu");
-	$tabla = mysqli_select_db($conexion,"bitacora_ssu");
-	
-	if(trim($error) != "")
-	{
-		$sql_bitacora = "INSERT INTO ".$tabla."_errores ('' ,id_usuario, fecha, hora, ip, archivo, consulta, error) VALUES ('' ,
-'".$id_usuario."', '".date("Y-m-d")."', '".date("H:i:s")."', '".$ip."', '".$archivo."', '".mysqli_real_escape_string($conexion,$consulta)."','".mysqli_real_escape_string($conexion, $error)."');";
-	}
-	else
-	{
-		$sql_bitacora = "INSERT INTO ".$tabla." (id_usuario, fecha, hora, ip, archivo, consulta) VALUES (
-'".$id_usuario."', '".date("Y-m-d")."', '".date("H:i:s")."', '".$ip."', '".$archivo."', '".mysqli_real_escape_string($conexion,$consulta)."');";
-	}
-		
-	mysqli_query($conexion, $sql_bitacora);
-	mysqli_select_db($conexion, "siup7");
-}
-
-
-
 function recursive_array_replace($find, $replace, $array) {
     if (!is_array($array)) {
         return str_replace($find, $replace, $array);
@@ -1511,4 +1465,24 @@ function recursive_array_replace($find, $replace, $array) {
 }
 
 
+
+function Bitacora_SIUP($tabla, $id_usuario, $ip, $archivo, $consulta, $error)
+{
+	$conexion = Conectar();
+	mysqli_select_db($conexion,"bitacora_ssu");
+	
+	if(trim($error) != "")
+	{
+		$sql_bitacora = "INSERT INTO bitacora_ssu_errores (id_bitacora_siup, id_usuario, fecha, hora, archivo, consulta_sql, error) VALUES (
+'".$id_usuario."', '".date("Y-m-d")."', '".date("H:i:s")."', '".$ip."', '".$archivo."', '".mysqli_real_escape_string($conexion,$consulta)."','".mysqli_real_escape_string($conexion, $error)."');";
+	}
+	else
+	{
+		$sql_bitacora = "INSERT INTO bitacora_ssu (id_bitacora_siup, id_usuario, fecha, hora, archivo, consulta_sql, error) VALUES (
+'".$id_usuario."', '".date("Y-m-d")."', '".date("H:i:s")."', '".$ip."', '".$archivo."', '".mysqli_real_escape_string($conexion,$consulta)."');";
+	}
+		
+	mysqli_query($conexion, $sql_bitacora);
+	mysqli_select_db($conexion, "siup7");
+}
 ?>

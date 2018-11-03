@@ -8,8 +8,28 @@
 
 <?php include ("../php/Body.php"); ?>
 
-<p align="center" class="shadow-lg p-3 mb-5 bg-white rounded">Bienvenido(a): <?php echo $_SESSION["Nombre"]; ?></p>
+<table class="table">
+  <!-- <caption>List of users</caption> -->
+  <thead class="alert-info shadow text-center">
+    <tr>
+      <th scope="col" colspan="3">Bienvenido(a): <?php echo $_SESSION["Nombre"]; ?></th>
+      <!-- <th scope="col">First</th> -->
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Tu correo personal es:</th>
+      <td> <?php echo $_SESSION["Correo"]; ?>&nbsp;&nbsp; &nbsp; <a href="https://outlook.live.com/" target="_blank"><img src="../imagenes/images_vectorized.png" alt="Logo" style="width:38px;"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">Correo de Cotizaciones y General</th>
+      <td><?php echo $_SESSION["Correo2"]; ?>&nbsp;&nbsp; &nbsp; <a href="https://www.google.com/gmail/" target="_blank"><img src="../imagenes/logo_gmail.ico" alt="Logo" style="width:28px;"></a>
+      </td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
-<p align="center" class="alert alert-info">Tu correo es: <?php echo $_SESSION["Correo"]; ?></p>
 
 <?php include ("../php/Footer.php"); ?>
