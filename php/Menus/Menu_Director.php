@@ -17,8 +17,8 @@
         
         <div class="dropdown-content" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="Catalogos.php">Catalogos</a>
-            <!-- <a class="dropdown-item" href="Tarjetas.php">Tarjetas</a> -->
-            <!-- <a class="dropdown-item" href="#">Another action</a> -->
+            <a class="dropdown-item" href="Tarjetas_BNI.php">Tarjetas</a>
+            <a class="dropdown-item" href="../catalogo/Curso Capacitación EC0586 Solartec V4.1.pdf" target="_blank">Capacitacion Solartec PDF</a>
             <!-- <a class="dropdown-item" href="nada.php">Something else here</a> -->
         </div>
     </li>
@@ -45,10 +45,10 @@
          <a class="nav-link " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cotizadores</a>
         
         <div class="dropdown-content" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="../Cotizadores_Excel/1.-COTIZADOR CALENTADORES .xlsm">Cotizador Calentadores</a>
-            <a class="dropdown-item" href="../Cotizadores_Excel/COTIZADOR MASTER 9 JULIO.xlsm">COTIZADOR MASTER</a>
-            <a class="dropdown-item" href="../Cotizadores_Excel/COTIZADOR REDISEÑADO.xlsm">COTIZADOR REDISEÑADO</a>
-            <a class="dropdown-item" href="../Cotizadores_Excel/SUPER COTIZADOR BOMBEO.xlsm">SUPER COTIZADOR BOMBEO</a>
+            <a class="dropdown-item" href="../Cotizadores_Excel/COTIZADOR CALENTADORES .xlsm">Cotizador Calentadores</a>
+            <a class="dropdown-item" href="../Cotizadores_Excel/COTIZADOR MASTER 9 JULIO.xlsm">Cotizador Master</a>
+            <a class="dropdown-item" href="../Cotizadores_Excel/COTIZADOR REDISEÑADO.xlsm">Cotizador Rediseñado</a>
+            <a class="dropdown-item" href="../Cotizadores_Excel/SUPER COTIZADOR BOMBEO.xlsm">Super Cotizador Bombeo</a>
         </div>
     </li>
 

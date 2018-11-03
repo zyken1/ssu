@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="tarjetas%20Archivos/w3.css">
+<link rel="stylesheet" href="tarjetas%20Archivos/css.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-quarter img{margin-bottom: -6px; cursor: pointer}
+.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+</style>
+</head><body class="w3-light-grey">
+
+
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+  
+  <!-- Photo grid -->
+  <div class="w3-row w3-grayscale-min">
+    <div class="w3-quarter">
+      <img src="../tarjetas/1.jpg" style="width:100%" onclick="onClick(this)" alt="">
+      <img src="../tarjetas/2.jpg" style="width:100%" onclick="onClick(this)" alt="">
+      <img src="../tarjetas/3.jpg" style="width:100%" onclick="onClick(this)" alt="">
+   </div>
+    
+   <div class="w3-quarter">
+      <img src="../tarjetas/4.jpg" style="width:100%" onclick="onClick(this)" alt="">
+      <img src="../tarjetas/5.jpg" style="width:100%" onclick="onClick(this)" alt="">
+      <img src="../tarjetas/6.jpg" style="width:100%" onclick="onClick(this)" alt="">
+    </div>
+    
+    <div class="w3-quarter">
+      <img src="../tarjetas/7.jpg" style="width:100%" onclick="onClick(this)" alt="">
+      <img src="../tarjetas/8.jpg" style="width:100%" onclick="onClick(this)" alt="">
+      <img src="../tarjetas/9.jpg" style="width:100%" onclick="onClick(this)" alt="">
+    </div>
+
+    <div class="w3-quarter">
+      <img src="../tarjetas/10.jpg" style="width:100%" onclick="onClick(this)" alt="">
+      <img src="../tarjetas/11.jpg" style="width:100%" onclick="onClick(this)" alt="">
+      <img src="../tarjetas/12.jpg" style="width:100%" onclick="onClick(this)" alt="">
+    </div>
+  </div>
+
+<!--   Pagination
+<div class="w3-center w3-padding-32">
+  <div class="w3-bar">
+    <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+    <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+    <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+    <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+    <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+    <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+  </div>
+</div> -->
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top: 0px; display: none;" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image" src="tarjetas%20Archivos/man_bench.jpg">
+      <p id="caption">Waiting for the bus in the desert</p>
+    </div>
+  </div>
+
+
+
+
+  
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+ 
+
+
+
+</body></html>
