@@ -14,10 +14,10 @@
  <table class="table">
   <thead>
     <tr>
+      <th> Nombre de la Empresa</th>
       <th> Nombre del Contacto</th>
       <th> Numero Telefonico</th>
       <th> Correo Electronico</th>
-      <th> Nombre de la Empresa</th>
       <th> Numero</th>
       <th> Direccion</th>
       <th>Tarjeta de Presentacion</th>
@@ -25,10 +25,10 @@
   </thead>
   <tbody>
     <tr>
-      <th>Jose Lazaro</th>
+      <td>New York Life</td>
+      <th>------</th>
       <td>4521983046</td>
       <td>jqgebdguy@gmail.com</td>
-      <td>PROMOCAT</td>
       <td>15461463</td>
       <td>Avenida Juarez</td>
       <td><a href="../imagenes/sistemas.jpg " target="_blank">

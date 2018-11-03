@@ -46,9 +46,9 @@
         
         <div class="dropdown-content" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="../Cotizadores_Excel/COTIZADOR CALENTADORES .xlsm">Cotizador Calentadores</a>
-            <a class="dropdown-item" href="../Cotizadores_Excel/COTIZADOR MASTER 9 JULIO.xlsm">Cotizador Master</a>
-            <a class="dropdown-item" href="../Cotizadores_Excel/COTIZADOR REDISEÑADO.xlsm">Cotizador Rediseñado</a>
-            <a class="dropdown-item" href="../Cotizadores_Excel/SUPER COTIZADOR BOMBEO.xlsm">Super Cotizador Bombeo</a>
+            <a class="dropdown-item" href="../Cotizadores_Excel/COTIZADOR MASTER 9 JULIO.xlsm">Autónomo</a>
+            <a class="dropdown-item" href="../Cotizadores_Excel/COTIZADOR REDISEÑADO.xlsm">Interconexion</a>
+            <a class="dropdown-item" href="../Cotizadores_Excel/SUPER COTIZADOR BOMBEO.xlsm">Bombeo</a>
         </div>
     </li>
 
